@@ -2,7 +2,7 @@
 
 Fedora Linux, niri, Noctalia, kitty, & zsh
 
-![screenshot](screenshots/Screenshot from 2026-08-26 15-59-33.png)
+![screenshot](screenshots/Screenshot%from&2026-08-26%15-59-33.png)
 
 ## Not in this repo — install separately
 
