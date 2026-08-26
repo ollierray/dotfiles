@@ -2,6 +2,8 @@
 
 Fedora Linux, niri, Noctalia, kitty, & zsh
 
+![screenshot](screenshots/screenshot-4.png)
+
 ## Not in this repo — install separately
 
 Icons and cursors:
