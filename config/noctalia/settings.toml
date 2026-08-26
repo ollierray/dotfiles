@@ -1,0 +1,204 @@
+config_version = 13
+
+[audio]
+enable_sounds = true
+
+[backdrop]
+blur_intensity = 0.0
+enabled = true
+tint_intensity = 0.29999999999999999
+
+[bar.default]
+background_opacity = 0.39999999105930328
+concave_edge_corners = false
+font_family = "JetBrains Mono"
+margin_ends = 0
+radius = 0
+scale = 1.350000012665987
+shadow = false
+thickness = 35
+
+    [bar.default.dead_zone.actions]
+    middle = "volume-mute"
+    scroll_down = "brightness-down"
+    scroll_up = "brightness-up"
+
+[battery.device."/org/freedesktop/UPower/devices/battery_hidpp_battery_0"]
+warning_threshold = 10
+
+[brightness]
+enable_ddcutil = true
+
+[calendar]
+enabled = true
+
+    [calendar.account.personal_google]
+    name = "Calendar"
+    type = "google"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[location]
+auto_locate = true
+
+[lockscreen]
+blur_intensity = 0.39999999105930328
+blurred_desktop = true
+tint_intensity = 0.39999999105930328
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [ "lockscreen-login-box@HDMI-1", "lockscreen-login-box@HDMI-A-1", "lockscreen-widget-0000000000000001" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 640.0
+    cy = 538.0
+    output = "HDMI-1"
+    placement_height = 720.0
+    placement_width = 1280.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 196.0
+    box_width = 720.0
+    cx = 1024.0
+    cy = 592.0
+    output = "HDMI-A-1"
+    placement_height = 1152.0
+    placement_width = 2048.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 192.0
+    box_width = 720.0
+    cx = 1024.0
+    cy = 368.0
+    output = "HDMI-A-1"
+    placement_height = 1152.0
+    placement_width = 2048.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = false
+        background_opacity = 0.45000000000000001
+        background_radius = 29
+        clock_style = "digital"
+        color = "on_tertiary"
+        shadow = false
+
+[nightlight]
+temperature_day = 6700
+temperature_night = 4600
+
+[shell]
+avatar_path = "/home/oliver/Pictures/Avatars/skeletongrass.jpg"
+button_borders = false
+card_borders = false
+font_family = "JetBrains Mono SemiBold"
+input_borders = false
+password_style = "random"
+popup_borders = false
+popup_shadows = false
+screen_time_enabled = true
+telemetry_enabled = true
+
+    [shell.animation]
+    speed = 2.0000000298023224
+
+    [shell.launcher]
+    categories = false
+    compact = true
+
+        [shell.launcher.providers.emoji]
+        global = false
+
+    [shell.panel]
+    shadow = false
+    transparency_mode = "soft"
+
+    [shell.screen_corners]
+    size = 15
+
+    [shell.screenshot]
+    directory = "/home/oliver/Pictures/Screenshots"
+
+[theme]
+builtin = "Kanagawa"
+community_palette = "Creamy Forest"
+mode = "dark"
+source = "community"
+wallpaper_scheme = "m3-content"
+
+    [theme.templates]
+    builtin_ids = [ "alacritty", "btop", "emacs", "gtk3", "gtk4", "kcolorscheme", "kitty", "qt", "starship" ]
+    community_ids = [ "feishin", "discord", "vscode", "steam" ]
+
+[wallpaper]
+directory = "/home/oliver/Pictures/Wallpapers"
+fill_color = "primary"
+transition = [ "disc", "fade", "honeycomb", "wipe", "zoom" ]
+transition_on_startup = true
+
+    [wallpaper.default]
+    path = "/home/oliver/Pictures/Wallpapers/02_dark_wallpapers/green_forest-1.jpg"
+
+    [wallpaper.last]
+    path = "/home/oliver/Pictures/Wallpapers/02_dark_wallpapers/green_forest-1.jpg"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/oliver/Pictures/Wallpapers/02_dark_wallpapers/green_forest-1.jpg"
+
+[weather]
+unit = "imperial"

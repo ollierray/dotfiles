@@ -1,0 +1,75 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "small",
+    "padding": {
+      "top": 1,
+      "left": 1
+    },
+    "color": {
+      "1": "#4a6e66",
+      "2": "#4a6e66"
+    }
+  },
+  "display": {
+    "constants": [
+      "───────────"
+    ],
+    "color": {
+      "keys": "#a2b08d",
+      "output": "white",
+      "title": "#948e74"
+    },
+    "percent": {
+      "color": {
+        "green": "#6e857b",
+        "yellow": "#c8e996",
+        "red": "#ce7a71"
+      }
+    }
+  },
+  "modules": [
+    "break",
+    {
+      "type": "custom",
+      "format": "\u250c{$1}{$1}\u2510",
+      "outputColor": "38;2;50;74;69"
+    },
+    {
+      "type": "title",
+      "key": "    \uf007 ",
+      "format": "{1}"
+    },
+    {
+      "type": "os",
+      "key": "    {icon} ",
+      "format": "{2}"
+    },
+    {
+      "type": "wm",
+      "key": "    {icon} ",
+      "format": "{1}"
+    },
+    {
+      "type": "shell",
+      "key": "    {icon} ",
+      "format": "{1}"
+    },
+    {
+      "type": "terminal",
+      "key": "    {icon} ",
+      "format": "{1}"
+    },
+    {
+      "type": "command",
+      "key": "    \udb80\udd50 ",
+      "text": "b=$(stat -c %W / 2>/dev/null); [ \"${b:-0}\" -le 0 ] && b=$(stat -c %Z /); echo \"$(( ($(date +%s) - b) / 86400 )) days\""
+    },
+    {
+      "type": "custom",
+      "format": "\u2514{$1}{$1}\u2518",
+      "outputColor": "38;2;50;74;69"
+    },
+    "break"
+  ]
+}
